@@ -1,0 +1,20 @@
+NO.		NAME	CL.	POS.	HT.	WT.	HOMETOWN	HIGH SCHOOL	MAJOR
+1		Eli Feay	So.	F	6-5	165	Fairfield, CT	Fairfield Warde	Undeclared
+2		Alan Cedeno	Fr.	G	5-10	190	Cape Coral, FL	Canterbury School	Computer Science
+3		Ben Freed	Jr.	G	6-3	185	Augusta, GA	Alleluia Community School	Physics
+4		Ethan Ellis	Jr.	G	6-3	195	Silver Spring, MD	Montgomery Blair	Political Science
+5		Zev Katz	Jr.	G	6-2	160	Philadelphia, PA	Charles E. Smith Jewish Day School	Psychological Science
+10	*	Avni Mustafaj	Jr.	G	6-2	175	Yonkers, NY	Fordham Preparatory School	Economics
+11	*	Neville Lee	Sr.	G	6-0	185	Yonkers, NY	Macduffie School	Neuroscience
+12		Oliver Moody	Sr.	G	6-2	175	Wayland, MA	Wayland	Computer Science
+13		Kevin McAuliffe	Jr.	G	6-3	170	Bethesda, MD	Bethesda Chevy Chase	Education
+14		Alex Walters	Fr.	F	6-6	205	Atlanta, GA	Lovett	Economics
+15		Rayan El Amine	Jr.	G/F	6-5	205	Beirut, Lebanon	American School of Doha	Sociology
+20		Jack Rothenberg	Jr.	G/F	6-4	205	Yardley, PA	La Salle College	Economics
+21		Case Parsons	So.	F	6-7	215	Fort McDowell, AZ	BASIS Scottsdale	Economics & Computer Science
+23		Luke Adams	Fr.	G	6-0	175	Leawood, KS	Blue Valley North	Undeclared
+30		Logan Scott	So.	F	6-6	210	Schenectady, NY	Colonie Central	Economics & Neuroscience and Behavior
+32		Zach Johnson	Jr.	F	6-5	250	San Francisco, CA	Lick Wilmerding	Neuroscience and Behavior
+33		Devyn Benson	Fr.	F	6-4	240	Wilmington, DE	The Tatnall School	Computer Science
+34		Michael Dixon	Jr.	C	6-8	275	Brooklyn, NY	Friends Seminary	Mathematics
+35		Willem Nielsen	Jr.	G	6-2	155	New York, NY	Brooklyn Technical	Undeclared

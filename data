@@ -1,0 +1,2370 @@
+<table border="3" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>School</th>
+      <th>City and State</th>
+      <th>Region</th>
+      <th>Conference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adrian College</td>
+      <td>Adrian, Michigan</td>
+      <td>Great Lakes</td>
+      <td>Michigan Intercollegiate Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Albertus Magnus College</td>
+      <td>New Haven, Connecticut</td>
+      <td>New England</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>Albion College</td>
+      <td>Albion, Michigan</td>
+      <td>Great Lakes</td>
+      <td>USA South Ahletic Conference</td>
+    </tr>
+    <tr>
+      <td>Albright College</td>
+      <td>Reading, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic College</td>
+    </tr>
+    <tr>
+      <td>Alfred University</td>
+      <td>Alfred, New York</td>
+      <td>North East</td>
+      <td>Landmark Conference</td>
+    </tr>
+    <tr>
+      <td>Allegheny College</td>
+      <td>Meadville, Pennsylvania</td>
+      <td>North East</td>
+      <td>North Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Alma College</td>
+      <td>Alma, Michigan</td>
+      <td>Great Lakes</td>
+      <td>American Rivers Conference</td>
+    </tr>
+    <tr>
+      <td>Alvernia University</td>
+      <td>Reading, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Confernece</td>
+    </tr>
+    <tr>
+      <td>Amherst College</td>
+      <td>Amherst, Massachusetts</td>
+      <td>New England</td>
+      <td>Middle Atlantic Confernece and Eastern Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Anderson University – Indiana</td>
+      <td>Anderson, Indiana</td>
+      <td>Great Lakes</td>
+      <td>Landmark Conference</td>
+    </tr>
+    <tr>
+      <td>Anna Maria College</td>
+      <td>Paxton, Massachusetts</td>
+      <td>New England</td>
+      <td>Great Northeast Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Arcadia University</td>
+      <td>Glenside, Pennsylvania</td>
+      <td>North East</td>
+      <td>New England Women's and Men's Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Asbury University</td>
+      <td>Wilmore, Kentucky</td>
+      <td>Mid East</td>
+      <td>National Christian College Athletics Association</td>
+    </tr>
+    <tr>
+      <td>Augsburg University</td>
+      <td>Minneapolis, Minnesota</td>
+      <td>Mid West</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Augustana College – Illinois</td>
+      <td>Rock Island, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Aurora University</td>
+      <td>Aurora, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Austin College</td>
+      <td>Sherman, Texas</td>
+      <td>Mid South</td>
+      <td>Northen Athletic Collegiate  Conference</td>
+    </tr>
+    <tr>
+      <td>Averett University</td>
+      <td>Danville, Virginia</td>
+      <td>Mid East</td>
+      <td>Continental Volleyball Conference</td>
+    </tr>
+    <tr>
+      <td>Babson College</td>
+      <td>Wellesley, Massachusetts</td>
+      <td>New England</td>
+      <td>USA South Conference</td>
+    </tr>
+    <tr>
+      <td>Baldwin Wallace University</td>
+      <td>Berea, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Ohio Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Bard College</td>
+      <td>Annandale-On-Hudson, New York</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Bates College</td>
+      <td>Lewiston, Maine</td>
+      <td>New England</td>
+      <td>Athletic East Conference</td>
+    </tr>
+    <tr>
+      <td>Belhaven University</td>
+      <td>Jackson, Mississippi</td>
+      <td>Mid South</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>Beloit College</td>
+      <td>Beloit, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Middle Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Benedictine University</td>
+      <td>Lisle, Illinois</td>
+      <td>Great Lakes</td>
+      <td>New England Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Berea College</td>
+      <td>Berea, Kentucky</td>
+      <td>Mid East</td>
+      <td>Athletic East Conference</td>
+    </tr>
+    <tr>
+      <td>Berry College</td>
+      <td>Mount Berry, Georgia</td>
+      <td>South East</td>
+      <td>New England Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Bethany College – West Virginia</td>
+      <td>Bethany, West Virginia</td>
+      <td>Mid East</td>
+      <td>Preisdents' Athletic College</td>
+    </tr>
+    <tr>
+      <td>Bethany Lutheran College</td>
+      <td>Mankato, Minnesota</td>
+      <td>Mid West</td>
+      <td>North Coast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Bethel University – Minnesota</td>
+      <td>Saint Paul, Minnesota</td>
+      <td>Mid West</td>
+      <td>Allegheny Mountain Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Birmingham-Southern College</td>
+      <td>Birmingham, Alabama</td>
+      <td>South East</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Blackburn College</td>
+      <td>Carlinville, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Bluffton University</td>
+      <td>Bluffton, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Bowdoin College</td>
+      <td>Brunswick, Maine</td>
+      <td>New England</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Brandeis University</td>
+      <td>Waltham, Massachusetts</td>
+      <td>New England</td>
+      <td>Skyline Conference</td>
+    </tr>
+    <tr>
+      <td>Brevard College</td>
+      <td>Brevard, North Carolina</td>
+      <td>Mid East</td>
+      <td>Massachusetts State Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Bridgewater College</td>
+      <td>Bridgewater, Virginia</td>
+      <td>Mid East</td>
+      <td>Coast to Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Bridgewater State University</td>
+      <td>Bridgewater, Massachusetts</td>
+      <td>New England</td>
+      <td>Southern Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Buena Vista University</td>
+      <td>Storm Lake, Iowa</td>
+      <td>Mid West</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Cabrini University</td>
+      <td>Radnor, Pennsylvania</td>
+      <td>North East</td>
+      <td>Northern Athletics Conference</td>
+    </tr>
+    <tr>
+      <td>Cairn University</td>
+      <td>Langhorne, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>California Institute of Technology</td>
+      <td>Pasadena, California</td>
+      <td>West Coast</td>
+      <td>Middle Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>California Lutheran University</td>
+      <td>Thousand Oaks, California</td>
+      <td>West Coast</td>
+      <td>Commonwealth Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Calvin University</td>
+      <td>Grand Rapids, Michigan</td>
+      <td>Great Lakes</td>
+      <td>Southern Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Capital University</td>
+      <td>Columbus, Ohio</td>
+      <td>Great Lakes</td>
+      <td>New England Women and Men's Conference</td>
+    </tr>
+    <tr>
+      <td>Carleton College</td>
+      <td>Northfield, Minnesota</td>
+      <td>Mid West</td>
+      <td>Skyline Conference</td>
+    </tr>
+    <tr>
+      <td>Carnegie Mellon University</td>
+      <td>Pittsburgh, Pennsylvania</td>
+      <td>North East</td>
+      <td>Coast to Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Carroll University</td>
+      <td>Waukesha, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>American Rivers Conference</td>
+    </tr>
+    <tr>
+      <td>Carthage College</td>
+      <td>Kenosha, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Coast to Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Case Western Reserve University</td>
+      <td>Cleveland, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Landmark Conference</td>
+    </tr>
+    <tr>
+      <td>Castleton University</td>
+      <td>Castleton, Vermont</td>
+      <td>New England</td>
+      <td>Sun Coast Swimming Conference</td>
+    </tr>
+    <tr>
+      <td>Catholic University of America</td>
+      <td>Washington, District Of Columbia</td>
+      <td>North East</td>
+      <td>American Rivers Conference</td>
+    </tr>
+    <tr>
+      <td>Cazenovia College</td>
+      <td>Cazenovia, New York</td>
+      <td>North East</td>
+      <td>Little East Conference</td>
+    </tr>
+    <tr>
+      <td>Centenary College of Louisiana</td>
+      <td>Shreveport, Louisiana</td>
+      <td>Mid South</td>
+      <td>Southern Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Centenary University – New Jersey</td>
+      <td>Hackettstown, New Jersey</td>
+      <td>North East</td>
+      <td>Colonial States Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Central College</td>
+      <td>Pella, Iowa</td>
+      <td>Mid West</td>
+      <td>Iowa Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Centre College</td>
+      <td>Danville, Kentucky</td>
+      <td>Mid East</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Chapman University</td>
+      <td>Orange, California</td>
+      <td>West Coast</td>
+      <td>Southern California Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Chatham University</td>
+      <td>Pittsburgh, Pennsylvania</td>
+      <td>North East</td>
+      <td>Presidents' Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Christopher Newport University</td>
+      <td>Newport News, Virginia</td>
+      <td>Mid East</td>
+      <td>Capital Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Claremont-Mudd-Scripps Colleges</td>
+      <td>Claremont, California</td>
+      <td>West Coast</td>
+      <td>Southern California Intercollegiate Athletic Conference (Division III), Western Water Polo Association (Division III)</td>
+    </tr>
+    <tr>
+      <td>Clark University</td>
+      <td>Worcester, Massachusetts</td>
+      <td>New England</td>
+      <td>New England Women's &amp; Men's Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Clarks Summit University</td>
+      <td>Clarks Summit, Pennsylvania</td>
+      <td>North East</td>
+      <td>Colonial States Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Clarkson University</td>
+      <td>Potsdam, New York</td>
+      <td>North East</td>
+      <td>Liberty League</td>
+    </tr>
+    <tr>
+      <td>Coe College</td>
+      <td>Cedar Rapids, Iowa</td>
+      <td>Mid West</td>
+      <td>Iowa Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Colby College</td>
+      <td>Waterville, Maine</td>
+      <td>New England</td>
+      <td>New England Small College Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Colby-Sawyer College</td>
+      <td>New London, New Hampshire</td>
+      <td>New England</td>
+      <td>North Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>College of Mount Saint Vincent</td>
+      <td>Bronx, New York</td>
+      <td>North East</td>
+      <td>Skyline Conference</td>
+    </tr>
+    <tr>
+      <td>College of Wooster</td>
+      <td>Wooster, Ohio</td>
+      <td>Great Lakes</td>
+      <td>North Coast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Colorado College</td>
+      <td>Colorado Springs, Colorado</td>
+      <td>South West</td>
+      <td>Southern Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Concordia College – Minnesota</td>
+      <td>Moorhead, Minnesota</td>
+      <td>Mid West</td>
+      <td>Minnesota Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Concordia University – Chicago</td>
+      <td>River Forest, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Northern Athletics Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Concordia University – Texas</td>
+      <td>Austin, Texas</td>
+      <td>Mid South</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>Concordia University Wisconsin</td>
+      <td>Mequon, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Northern Athletics Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Connecticut College</td>
+      <td>New London, Connecticut</td>
+      <td>New England</td>
+      <td>New England Small College Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Cornell College</td>
+      <td>Mount Vernon, Iowa</td>
+      <td>Mid West</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>Covenant College</td>
+      <td>Lookout Mountain, Georgia</td>
+      <td>South East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Crown College</td>
+      <td>Saint Bonifacius, Minnesota</td>
+      <td>Mid West</td>
+      <td>Upper Midwest Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Culinary Institute of America</td>
+      <td>Hyde Park, New York</td>
+      <td>North East</td>
+      <td>Hudson Valley Men's Athletic Conference, Hudson Valley Women's Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Curry College</td>
+      <td>Milton, Massachusetts</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Dean College</td>
+      <td>Franklin, Massachusetts</td>
+      <td>New England</td>
+      <td>Eastern Collegiate Football Conference</td>
+    </tr>
+    <tr>
+      <td>Defiance College</td>
+      <td>Defiance, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Heartland Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Delaware Valley University</td>
+      <td>Doylestown, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conferences</td>
+    </tr>
+    <tr>
+      <td>Denison University</td>
+      <td>Granville, Ohio</td>
+      <td>Great Lakes</td>
+      <td>North Coast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>DePauw University</td>
+      <td>Greencastle, Indiana</td>
+      <td>Great Lakes</td>
+      <td>North Coast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>DeSales University</td>
+      <td>Center Valley, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Dickinson College</td>
+      <td>Carlisle, Pennsylvania</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Dominican University – Illinois</td>
+      <td>River Forest, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Northern Athletics Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Drew University</td>
+      <td>Madison, New Jersey</td>
+      <td>North East</td>
+      <td>Landmark Conference</td>
+    </tr>
+    <tr>
+      <td>Earlham College</td>
+      <td>Richmond, Indiana</td>
+      <td>Great Lakes</td>
+      <td>Heartland Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>East Texas Baptist University</td>
+      <td>Marshall, Texas</td>
+      <td>Mid South</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>Eastern Connecticut State University</td>
+      <td>Willimantic, Connecticut</td>
+      <td>New England</td>
+      <td>Little East Conference</td>
+    </tr>
+    <tr>
+      <td>Eastern Mennonite University</td>
+      <td>Harrisonburg, Virginia</td>
+      <td>Mid East</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Eastern Nazarene College</td>
+      <td>Quincy, Massachusetts</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Eastern University</td>
+      <td>Saint Davids, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conferences</td>
+    </tr>
+    <tr>
+      <td>Edgewood College</td>
+      <td>Madison, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Northern Athletics Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Elizabethtown College</td>
+      <td>Elizabethtown, Pennsylvania</td>
+      <td>North East</td>
+      <td>Landmark Conference</td>
+    </tr>
+    <tr>
+      <td>Elmhurst University</td>
+      <td>Elmhurst, Illinois</td>
+      <td>Great Lakes</td>
+      <td>College Conference of Illinois and Wisconsin</td>
+    </tr>
+    <tr>
+      <td>Elmira College</td>
+      <td>Elmira, New York</td>
+      <td>North East</td>
+      <td>Empire 8 Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Elms College</td>
+      <td>Chicopee, Massachusetts</td>
+      <td>New England</td>
+      <td>New England Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Emerson College</td>
+      <td>Boston, Massachusetts</td>
+      <td>New England</td>
+      <td>New England Women's &amp; Men's Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Emory University</td>
+      <td>Atlanta, Georgia</td>
+      <td>South East</td>
+      <td>University Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Endicott College</td>
+      <td>Beverly, Massachusetts</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Football</td>
+    </tr>
+    <tr>
+      <td>Eureka College</td>
+      <td>Eureka, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Upper Midwest Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Fairleigh Dickinson University – College at Florham</td>
+      <td>Madison, New Jersey</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conferences</td>
+    </tr>
+    <tr>
+      <td>Ferrum College</td>
+      <td>Ferrum, Virginia</td>
+      <td>Mid East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Finlandia University</td>
+      <td>Hancock, Michigan</td>
+      <td>Great Lakes</td>
+      <td>Coast to Coast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Fitchburg State University</td>
+      <td>Fitchburg, Massachusetts</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Football</td>
+    </tr>
+    <tr>
+      <td>Fontbonne University</td>
+      <td>St. Louis, Missouri</td>
+      <td>Mid West</td>
+      <td>St. Louis Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Framingham State University</td>
+      <td>Framingham, Massachusetts</td>
+      <td>New England</td>
+      <td>Massachusetts State Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Franciscan University of Steubenville</td>
+      <td>Steubenville, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Allegheny Mountain Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Franklin &amp; Marshall College</td>
+      <td>Lancaster, Pennsylvania</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Franklin College</td>
+      <td>Franklin, Indiana</td>
+      <td>Great Lakes</td>
+      <td>Heartland Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Gallaudet University</td>
+      <td>Washington, District Of Columbia</td>
+      <td>North East</td>
+      <td>Eastern Collegiate Football Conference</td>
+    </tr>
+    <tr>
+      <td>Geneva College</td>
+      <td>Beaver Falls, Pennsylvania</td>
+      <td>North East</td>
+      <td>Presidents' Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>George Fox University</td>
+      <td>Newberg, Oregon</td>
+      <td>West Coast</td>
+      <td>Northwest Conference</td>
+    </tr>
+    <tr>
+      <td>Gettysburg College</td>
+      <td>Gettysburg, Pennsylvania</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Gordon College</td>
+      <td>Wenham, Massachusetts</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Goucher College</td>
+      <td>Baltimore, Maryland</td>
+      <td>North East</td>
+      <td>Landmark Conference</td>
+    </tr>
+    <tr>
+      <td>Greensboro College</td>
+      <td>Greensboro, North Carolina</td>
+      <td>Mid East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Greenville University</td>
+      <td>Greenville, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Upper Midwest Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Grinnell College</td>
+      <td>Grinnell, Iowa</td>
+      <td>Mid West</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>Grove City College</td>
+      <td>Grove City, Pennsylvania</td>
+      <td>North East</td>
+      <td>Presidents' Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Guilford College</td>
+      <td>Greensboro, North Carolina</td>
+      <td>Mid East</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Gustavus Adolphus College</td>
+      <td>Saint Peter, Minnesota</td>
+      <td>Mid West</td>
+      <td>Minnesota Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Gwynedd Mercy University</td>
+      <td>Gwynedd Valley, Pennsylvania</td>
+      <td>North East</td>
+      <td>Colonial States Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Hamilton College</td>
+      <td>Clinton, New York</td>
+      <td>North East</td>
+      <td>New England Small College Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Hamline University</td>
+      <td>Saint Paul, Minnesota</td>
+      <td>Mid West</td>
+      <td>Minnesota Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Hampden-Sydney College</td>
+      <td>Hampden Sydney, Virginia</td>
+      <td>Mid East</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Hanover College</td>
+      <td>Hanover, Indiana</td>
+      <td>Great Lakes</td>
+      <td>Heartland Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Hardin-Simmons University</td>
+      <td>Abilene, Texas</td>
+      <td>Mid South</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>Hartwick College</td>
+      <td>Oneonta, New York</td>
+      <td>North East</td>
+      <td>Empire 8 Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Haverford College</td>
+      <td>Haverford, Pennsylvania</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Heidelberg University</td>
+      <td>Tiffin, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Ohio Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Hendrix College</td>
+      <td>Conway, Arkansas</td>
+      <td>Mid South</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Hilbert College</td>
+      <td>Hamburg, New York</td>
+      <td>North East</td>
+      <td>Allegheny Mountain Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Hiram College</td>
+      <td>Hiram, Ohio</td>
+      <td>Great Lakes</td>
+      <td>North Coast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Hobart &amp; William Smith College</td>
+      <td>Geneva, New York</td>
+      <td>North East</td>
+      <td>Liberty League (Division III)</td>
+    </tr>
+    <tr>
+      <td>Hood College</td>
+      <td>Frederick, Maryland</td>
+      <td>North East</td>
+      <td>MAC Commonwealth Conference</td>
+    </tr>
+    <tr>
+      <td>Hope College</td>
+      <td>Holland, Michigan</td>
+      <td>Great Lakes</td>
+      <td>Michigan Intercollegiate Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Houghton College</td>
+      <td>Houghton, New York</td>
+      <td>North East</td>
+      <td>Empire 8 Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Howard Payne University</td>
+      <td>Brownwood, Texas</td>
+      <td>Mid South</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>Huntingdon College</td>
+      <td>Montgomery, Alabama</td>
+      <td>South East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Husson University</td>
+      <td>Bangor, Maine</td>
+      <td>New England</td>
+      <td>Eastern Collegiate Football Conference</td>
+    </tr>
+    <tr>
+      <td>Illinois College</td>
+      <td>Jacksonville, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>Illinois Institute of Technology</td>
+      <td>Chicago, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Division III Independents</td>
+    </tr>
+    <tr>
+      <td>Illinois Wesleyan University</td>
+      <td>Bloomington, Illinois</td>
+      <td>Great Lakes</td>
+      <td>College Conference of Illinois and Wisconsin</td>
+    </tr>
+    <tr>
+      <td>Immaculata University</td>
+      <td>Pennsylvania</td>
+      <td>North East</td>
+      <td>Colonial States Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Ithaca College</td>
+      <td>Ithaca, New York</td>
+      <td>North East</td>
+      <td>Liberty League</td>
+    </tr>
+    <tr>
+      <td>John Carroll University</td>
+      <td>University Heights, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Ohio Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Johns Hopkins University</td>
+      <td>Baltimore, Maryland</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Johnson &amp; Wales University – Providence</td>
+      <td>Providence, Rhode Island</td>
+      <td>New England</td>
+      <td>Great Northeast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Juniata College</td>
+      <td>Huntingdon, Pennsylvania</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Kalamazoo College</td>
+      <td>Kalamazoo, Michigan</td>
+      <td>Great Lakes</td>
+      <td>Michigan Intercollegiate Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Kean University</td>
+      <td>Union, New Jersey</td>
+      <td>North East</td>
+      <td>New Jersey Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Keene State College</td>
+      <td>Keene, New Hampshire</td>
+      <td>New England</td>
+      <td>Little East Conference</td>
+    </tr>
+    <tr>
+      <td>Kenyon College</td>
+      <td>Gambier, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Keuka College</td>
+      <td>Keuka Park, New York</td>
+      <td>North East</td>
+      <td>Empire 8</td>
+    </tr>
+    <tr>
+      <td>Keystone College</td>
+      <td>La Plume, Pennsylvania</td>
+      <td>North East</td>
+      <td>Colonial States Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>King's College – Pennsylvania</td>
+      <td>Wilkes-Barre, Pennsylvania</td>
+      <td>North East</td>
+      <td>Division III Independents</td>
+    </tr>
+    <tr>
+      <td>Knox College</td>
+      <td>Galesburg, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>La Roche University</td>
+      <td>Pittsburgh, Pennsylvania</td>
+      <td>North East</td>
+      <td>Division III Independents</td>
+    </tr>
+    <tr>
+      <td>LaGrange College</td>
+      <td>LaGrange, Georgia</td>
+      <td>South East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Lake Forest College</td>
+      <td>Lake Forest, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>Lakeland University</td>
+      <td>Plymouth, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Northern Athletics Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Lancaster Bible College</td>
+      <td>Lancaster, Pennsylvania</td>
+      <td>North East</td>
+      <td>United East Conference</td>
+    </tr>
+    <tr>
+      <td>Lasell University</td>
+      <td>Newton, Massachusetts</td>
+      <td>New England</td>
+      <td>Great Northeast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Lawrence University</td>
+      <td>Appleton, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>Lebanon Valley College</td>
+      <td>Annville, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Lesley University</td>
+      <td>Cambridge, Massachusetts</td>
+      <td>New England</td>
+      <td>New England Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Lewis &amp; Clark College</td>
+      <td>Portland, Oregon</td>
+      <td>West Coast</td>
+      <td>Northwest Conference</td>
+    </tr>
+    <tr>
+      <td>Linfield University</td>
+      <td>McMinnville, Oregon</td>
+      <td>West Coast</td>
+      <td>Northwest Conference</td>
+    </tr>
+    <tr>
+      <td>Loras College</td>
+      <td>Dubuque, Iowa</td>
+      <td>Mid West</td>
+      <td>Iowa Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Luther College</td>
+      <td>Decorah, Iowa</td>
+      <td>Mid West</td>
+      <td>Iowa Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Lycoming College</td>
+      <td>Williamsport, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conferences</td>
+    </tr>
+    <tr>
+      <td>Macalester College</td>
+      <td>Saint Paul, Minnesota</td>
+      <td>Mid West</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>Maine Maritime Academy</td>
+      <td>Castine, Maine</td>
+      <td>New England</td>
+      <td>New England Women's &amp; Men's Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Manchester University</td>
+      <td>North Manchester, Indiana</td>
+      <td>Great Lakes</td>
+      <td>Heartland Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Manhattanville College</td>
+      <td>Purchase, New York</td>
+      <td>North East</td>
+      <td>MAC Freedom Conference</td>
+    </tr>
+    <tr>
+      <td>Maranatha Baptist University</td>
+      <td>Watertown, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Independent Midwest Region</td>
+    </tr>
+    <tr>
+      <td>Marian University – Wisconsin</td>
+      <td>Fond du Lac, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Northern Athletics Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Marietta College</td>
+      <td>Marietta, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Ohio Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Martin Luther College</td>
+      <td>New Ulm, Minnesota</td>
+      <td>Mid West</td>
+      <td>Upper Midwest Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Mary Baldwin University</td>
+      <td>Staunton, Virginia</td>
+      <td>Mid East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Marymount University (VA)</td>
+      <td>Arlington, Virginia</td>
+      <td>Mid East</td>
+      <td>Capital Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Maryville College</td>
+      <td>Maryville, Tennessee</td>
+      <td>Mid East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Marywood University</td>
+      <td>Scranton, Pennsylvania</td>
+      <td>North East</td>
+      <td>Colonial States Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Massachusetts College of Liberal Arts</td>
+      <td>North Adams, Massachusetts</td>
+      <td>New England</td>
+      <td>Massachusetts State Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Massachusetts Institute of Technology – MIT</td>
+      <td>Cambridge, Massachusetts</td>
+      <td>New England</td>
+      <td>New England Women's &amp; Men's Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>McDaniel College</td>
+      <td>Westminster, Maryland</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>McMurry University</td>
+      <td>Abilene, Texas</td>
+      <td>Mid South</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>Medaille College</td>
+      <td>Buffalo, New York</td>
+      <td>North East</td>
+      <td>Allegheny Mountain Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Messiah University</td>
+      <td>Mechanicsburg, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Methodist University</td>
+      <td>Fayetteville, North Carolina</td>
+      <td>Mid East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Middlebury College</td>
+      <td>Middlebury, Vermont</td>
+      <td>New England</td>
+      <td>New England Small College Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Millikin University</td>
+      <td>Decatur, Illinois</td>
+      <td>Great Lakes</td>
+      <td>College Conference of Illinois and Wisconsin</td>
+    </tr>
+    <tr>
+      <td>Millsaps College</td>
+      <td>Jackson, Mississippi</td>
+      <td>Mid South</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Milwaukee School of Engineering</td>
+      <td>Milwaukee, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Northern Athletics Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Misericordia University</td>
+      <td>Dallas, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conferences</td>
+    </tr>
+    <tr>
+      <td>Mitchell College</td>
+      <td>New London, Connecticut</td>
+      <td>New England</td>
+      <td>New England Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Monmouth College</td>
+      <td>Monmouth, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>Montclair State University</td>
+      <td>Montclair, New Jersey</td>
+      <td>North East</td>
+      <td>New Jersey Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Moravian University</td>
+      <td>Bethlehem, Pennsylvania</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Mount Aloysius College</td>
+      <td>Cresson, Pennsylvania</td>
+      <td>North East</td>
+      <td>Allegheny Mountain Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Mount Saint Mary College – New York</td>
+      <td>Newburgh, New York</td>
+      <td>North East</td>
+      <td>Skyline Conference</td>
+    </tr>
+    <tr>
+      <td>Mount St. Joseph University</td>
+      <td>Cincinnati, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Heartland Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Muhlenberg College</td>
+      <td>Allentown, Pennsylvania</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Muskingum University</td>
+      <td>New Concord, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Ohio Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Nazareth College</td>
+      <td>Rochester, New York</td>
+      <td>North East</td>
+      <td>Empire 8 Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Nebraska Wesleyan University</td>
+      <td>Lincoln, Nebraska</td>
+      <td>Mid West</td>
+      <td>Iowa Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Neumann University</td>
+      <td>Aston, Pennsylvania</td>
+      <td>North East</td>
+      <td>Colonial States Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>New England College</td>
+      <td>Henniker, New Hampshire</td>
+      <td>New England</td>
+      <td>North Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>New Jersey City University</td>
+      <td>Jersey City, New Jersey</td>
+      <td>North East</td>
+      <td>Eastern College Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>New York University</td>
+      <td>New York, New York</td>
+      <td>North East</td>
+      <td>University Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Nichols College</td>
+      <td>Dudley, Massachusetts</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Football</td>
+    </tr>
+    <tr>
+      <td>North Carolina Wesleyan College</td>
+      <td>Rocky Mount, North Carolina</td>
+      <td>Mid East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>North Central College</td>
+      <td>Naperville, Illinois</td>
+      <td>Great Lakes</td>
+      <td>College Conference of Illinois and Wisconsin</td>
+    </tr>
+    <tr>
+      <td>North Central University</td>
+      <td>Minneapolis, Minnesota</td>
+      <td>Mid West</td>
+      <td>Upper Midwest Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>North Park University</td>
+      <td>Chicago, Illinois</td>
+      <td>Great Lakes</td>
+      <td>College Conference of Illinois and Wisconsin</td>
+    </tr>
+    <tr>
+      <td>Northern Vermont University – Johnson</td>
+      <td>Johnson, Vermont</td>
+      <td>New England</td>
+      <td>North Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Northern Vermont University – Lyndon</td>
+      <td>Lyndonville, Vermont</td>
+      <td>New England</td>
+      <td>North Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Northland College</td>
+      <td>Ashland, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Upper Midwest Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Norwich University</td>
+      <td>Northfield, Vermont</td>
+      <td>New England</td>
+      <td>New England Women's &amp; Men's Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Oberlin College</td>
+      <td>Oberlin, Ohio</td>
+      <td>Great Lakes</td>
+      <td>North Coast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Occidental College</td>
+      <td>Los Angeles, California</td>
+      <td>West Coast</td>
+      <td>Southern California Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Oglethorpe University</td>
+      <td>Atlanta, Georgia</td>
+      <td>South East</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Ohio Northern University</td>
+      <td>Ada, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Ohio Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Ohio Wesleyan University</td>
+      <td>Delaware, Ohio</td>
+      <td>Great Lakes</td>
+      <td>North Coast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Olivet College</td>
+      <td>Olivet, Michigan</td>
+      <td>Great Lakes</td>
+      <td>Michigan Intercollegiate Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Otterbein University</td>
+      <td>Westerville, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Ohio Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Pacific Lutheran University</td>
+      <td>Tacoma, Washington</td>
+      <td>West Coast</td>
+      <td>Division III Independents</td>
+    </tr>
+    <tr>
+      <td>Pacific University</td>
+      <td>Forest Grove, Oregon</td>
+      <td>West Coast</td>
+      <td>Northwest Conference</td>
+    </tr>
+    <tr>
+      <td>Penn State Abington</td>
+      <td>Abington, Pennsylvania</td>
+      <td>North East</td>
+      <td>North Eastern Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Penn State Altoona</td>
+      <td>Altoona, Pennsylvania</td>
+      <td>North East</td>
+      <td>Allegheny Mountain Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Penn State Berks</td>
+      <td>Reading, Pennsylvania</td>
+      <td>North East</td>
+      <td>United East</td>
+    </tr>
+    <tr>
+      <td>Penn State Erie – The Behrend College</td>
+      <td>Erie, Pennsylvania</td>
+      <td>North East</td>
+      <td>Allegheny Mountain Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Penn State Harrisburg</td>
+      <td>Middletown, Pennsylvania</td>
+      <td>North East</td>
+      <td>United East</td>
+    </tr>
+    <tr>
+      <td>Pennsylvania College of Technology</td>
+      <td>Williamsport, Pennsylvania</td>
+      <td>North East</td>
+      <td>United East</td>
+    </tr>
+    <tr>
+      <td>Pfeiffer University</td>
+      <td>Misenheimer, North Carolina</td>
+      <td>Mid East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Piedmont University</td>
+      <td>Demorest, Georgia</td>
+      <td>South East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Plymouth State University</td>
+      <td>Plymouth, New Hampshire</td>
+      <td>New England</td>
+      <td>Massachusetts State Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Pomona-Pitzer Colleges</td>
+      <td>Claremont, California</td>
+      <td>West Coast</td>
+      <td>Southern California Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Pratt Institute</td>
+      <td>Brooklyn, New York</td>
+      <td>North East</td>
+      <td>ECAC Hockey (Division III)</td>
+    </tr>
+    <tr>
+      <td>Principia College</td>
+      <td>Elsah, Illinois</td>
+      <td>Great Lakes</td>
+      <td>St. Louis Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Ramapo College of New Jersey</td>
+      <td>Mahwah, New Jersey</td>
+      <td>North East</td>
+      <td>New Jersey Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Randolph College</td>
+      <td>Lynchburg, Virginia</td>
+      <td>Mid East</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Randolph-Macon College</td>
+      <td>Ashland, Virginia</td>
+      <td>Mid East</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Regis College</td>
+      <td>Weston, Massachusetts</td>
+      <td>New England</td>
+      <td>Great Northeast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Rensselaer Polytechnic Institute – RPI</td>
+      <td>Troy, New York</td>
+      <td>North East</td>
+      <td>Liberty League</td>
+    </tr>
+    <tr>
+      <td>Rhode Island College</td>
+      <td>Providence, Rhode Island</td>
+      <td>New England</td>
+      <td>Little East Conference</td>
+    </tr>
+    <tr>
+      <td>Rhodes College</td>
+      <td>Memphis, Tennessee</td>
+      <td>Mid East</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Ripon College</td>
+      <td>Ripon, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>Rivier University</td>
+      <td>Nashua, New Hampshire</td>
+      <td>New England</td>
+      <td>Great Northeast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Roanoke College</td>
+      <td>Salem, Virginia</td>
+      <td>Mid East</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Rochester Institute of Technology</td>
+      <td>Rochester, New York</td>
+      <td>North East</td>
+      <td>Liberty League</td>
+    </tr>
+    <tr>
+      <td>Rockford University</td>
+      <td>Rockford, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Northern Athletics Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>Roger Williams University</td>
+      <td>Bristol, Rhode Island</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Rose-Hulman Institute of Technology</td>
+      <td>Terre Haute, Indiana</td>
+      <td>Great Lakes</td>
+      <td>Heartland Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Rosemont College</td>
+      <td>Rosemont, Pennsylvania</td>
+      <td>North East</td>
+      <td>Colonial States Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Rowan University</td>
+      <td>Glassboro, New Jersey</td>
+      <td>North East</td>
+      <td>New Jersey Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Russell Sage College</td>
+      <td>Troy, New York</td>
+      <td>North East</td>
+      <td>Empire 8 Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Rutgers University – Newark</td>
+      <td>Newark, New Jersey</td>
+      <td>North East</td>
+      <td>New Jersey Athletic Conference; Eastern College Athletic Conference; Eastern Intercollegiate Volleyball Association</td>
+    </tr>
+    <tr>
+      <td>Saint Elizabeth University</td>
+      <td>Morristown, New Jersey</td>
+      <td>North East</td>
+      <td>North Eastern Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Saint John's University – Minnesota</td>
+      <td>Collegeville, Minnesota</td>
+      <td>Mid West</td>
+      <td>Minnesota Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Saint Joseph's College of Maine</td>
+      <td>Standish, Maine</td>
+      <td>New England</td>
+      <td>Great Northeast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Saint Mary's University of Minnesota</td>
+      <td>Winona, Minnesota</td>
+      <td>Mid West</td>
+      <td>Minnesota Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Saint Vincent College – Pennsylvania</td>
+      <td>Latrobe, Pennsylvania</td>
+      <td>North East</td>
+      <td>Presidents' Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Salem State University</td>
+      <td>Salem, Massachusetts</td>
+      <td>New England</td>
+      <td>Massachusetts State Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Salisbury University</td>
+      <td>Salisbury, Maryland</td>
+      <td>North East</td>
+      <td>Empire 8 Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Salve Regina University</td>
+      <td>Newport, Rhode Island</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Sarah Lawrence College</td>
+      <td>Bronxville, New York</td>
+      <td>North East</td>
+      <td>Skyline Conference</td>
+    </tr>
+    <tr>
+      <td>Schreiner University</td>
+      <td>Kerrville, Texas</td>
+      <td>Mid South</td>
+      <td>Southern Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Sewanee – The University of the South</td>
+      <td>Sewanee, Tennessee</td>
+      <td>Mid East</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Shenandoah University</td>
+      <td>Winchester, Virginia</td>
+      <td>Mid East</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Simpson College</td>
+      <td>Indianola, Iowa</td>
+      <td>Mid West</td>
+      <td>Iowa Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Skidmore College</td>
+      <td>Saratoga Springs, New York</td>
+      <td>North East</td>
+      <td>Liberty League</td>
+    </tr>
+    <tr>
+      <td>Southern Virginia University</td>
+      <td>Buena Vista, Virginia</td>
+      <td>Mid East</td>
+      <td>USA South</td>
+    </tr>
+    <tr>
+      <td>Southwestern University</td>
+      <td>Georgetown, Texas</td>
+      <td>Mid South</td>
+      <td>Southern Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Spalding University</td>
+      <td>Louisville, Kentucky</td>
+      <td>Mid East</td>
+      <td>St. Louis Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Springfield College</td>
+      <td>Springfield, Massachusetts</td>
+      <td>New England</td>
+      <td>ECAC (Division III, Football I-AA), Eastern Intercollegiate Volleyball Association (Division III), Empire Eight (Division III), New England College Wrestling Association (Division III), New England Women's and Men's Athletic Conference (Division III), Pilgrim League (Division III)</td>
+    </tr>
+    <tr>
+      <td>St. John Fisher College</td>
+      <td>Rochester, New York</td>
+      <td>North East</td>
+      <td>Empire 8</td>
+    </tr>
+    <tr>
+      <td>St. Joseph's College – Brooklyn</td>
+      <td>Brooklyn, New York</td>
+      <td>North East</td>
+      <td>Skyline Conference</td>
+    </tr>
+    <tr>
+      <td>St. Joseph's College – Long Island</td>
+      <td>Patchogue, New York</td>
+      <td>North East</td>
+      <td>Skyline Conference, Eastern College Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>St. Lawrence University</td>
+      <td>Canton, New York</td>
+      <td>North East</td>
+      <td>Liberty League</td>
+    </tr>
+    <tr>
+      <td>St. Mary's College of Maryland</td>
+      <td>St. Mary's City, Maryland</td>
+      <td>North East</td>
+      <td>United East</td>
+    </tr>
+    <tr>
+      <td>St. Norbert College</td>
+      <td>De Pere, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>St. Olaf College</td>
+      <td>Northfield, Minnesota</td>
+      <td>Mid West</td>
+      <td>Minnesota Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Stevens Institute of Technology</td>
+      <td>Hoboken, New Jersey</td>
+      <td>North East</td>
+      <td>Empire 8 Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Stevenson University</td>
+      <td>Stevenson, Maryland</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Stockton University</td>
+      <td>Galloway, New Jersey</td>
+      <td>North East</td>
+      <td>New Jersey Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Suffolk University</td>
+      <td>Boston, Massachusetts</td>
+      <td>New England</td>
+      <td>Great Northeast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Sul Ross State University</td>
+      <td>Alpine, Texas</td>
+      <td>Mid South</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Buffalo State College</td>
+      <td>Buffalo, New York</td>
+      <td>North East</td>
+      <td>Empire 8 Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Canton</td>
+      <td>Canton, New York</td>
+      <td>North East</td>
+      <td>Independent</td>
+    </tr>
+    <tr>
+      <td>SUNY College at Brockport</td>
+      <td>Brockport, New York</td>
+      <td>North East</td>
+      <td>Empire 8 Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY College at Old Westbury</td>
+      <td>Old Westbury, New York</td>
+      <td>North East</td>
+      <td>Skyline Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY College at Oneonta</td>
+      <td>Oneonta, New York</td>
+      <td>North East</td>
+      <td>State University of New York Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY College of Agriculture &amp; Technology at Cobleskill</td>
+      <td>Cobleskill, New York</td>
+      <td>North East</td>
+      <td>North Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Cortland</td>
+      <td>Cortland, New York</td>
+      <td>North East</td>
+      <td>State University of New York Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Farmingdale State College</td>
+      <td>Farmingdale, New York</td>
+      <td>North East</td>
+      <td>Skyline Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Fredonia</td>
+      <td>Fredonia, New York</td>
+      <td>North East</td>
+      <td>State University of New York Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Geneseo</td>
+      <td>Geneseo, New York</td>
+      <td>North East</td>
+      <td>State University of New York Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Maritime College</td>
+      <td>Throggs Neck, New York</td>
+      <td>North East</td>
+      <td>Eastern Collegiate Football Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Morrisville</td>
+      <td>Morrisville, New York</td>
+      <td>North East</td>
+      <td>United East</td>
+    </tr>
+    <tr>
+      <td>SUNY New Paltz</td>
+      <td>New Paltz, New York</td>
+      <td>North East</td>
+      <td>State University of New York Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Oswego</td>
+      <td>Oswego, New York</td>
+      <td>North East</td>
+      <td>State University of New York Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Plattsburgh</td>
+      <td>Plattsburgh, New York</td>
+      <td>North East</td>
+      <td>State University of New York Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Potsdam</td>
+      <td>Potsdam, New York</td>
+      <td>North East</td>
+      <td>State University of New York Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>SUNY Purchase College</td>
+      <td>Purchase, New York</td>
+      <td>North East</td>
+      <td>Skyline Conference</td>
+    </tr>
+    <tr>
+      <td>Susquehanna University</td>
+      <td>Selinsgrove, Pennsylvania</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Swarthmore College</td>
+      <td>Swarthmore, Pennsylvania</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Texas Lutheran University</td>
+      <td>Seguin, Texas</td>
+      <td>Mid South</td>
+      <td>Southern Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>The College of New Jersey</td>
+      <td>Ewing, New Jersey</td>
+      <td>North East</td>
+      <td>New Jersey Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>The College of St. Scholastica</td>
+      <td>Duluth, Minnesota</td>
+      <td>Mid West</td>
+      <td>Upper Midwest Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Thiel College</td>
+      <td>Greenville, Pennsylvania</td>
+      <td>North East</td>
+      <td>Presidents' Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Thomas College</td>
+      <td>Waterville, Maine</td>
+      <td>New England</td>
+      <td>North Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>Transylvania University</td>
+      <td>Lexington, Kentucky</td>
+      <td>Mid East</td>
+      <td>Heartland Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Trine University</td>
+      <td>Angola, Indiana</td>
+      <td>Great Lakes</td>
+      <td>Michigan Intercollegiate Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Trinity College – Connecticut</td>
+      <td>Hartford, Connecticut</td>
+      <td>New England</td>
+      <td>New England Small College Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Trinity University – Texas</td>
+      <td>San Antonio, Texas</td>
+      <td>Mid South</td>
+      <td>Southern Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Tufts University</td>
+      <td>Medford, Massachusetts</td>
+      <td>New England</td>
+      <td>New England Small College Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Union College – New York</td>
+      <td>Schenectady, New York</td>
+      <td>North East</td>
+      <td>Liberty League</td>
+    </tr>
+    <tr>
+      <td>United States Coast Guard Academy</td>
+      <td>New London, Connecticut</td>
+      <td>New England</td>
+      <td>New England Women's &amp; Men's Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>United States Merchant Marine Academy</td>
+      <td>Kings Point, New York</td>
+      <td>North East</td>
+      <td>New England Women's &amp; Men's Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of California – Santa Cruz</td>
+      <td>Santa Cruz, California</td>
+      <td>West Coast</td>
+      <td>Division III Independents</td>
+    </tr>
+    <tr>
+      <td>University of Chicago</td>
+      <td>Chicago, Illinois</td>
+      <td>Great Lakes</td>
+      <td>Midwest Conference</td>
+    </tr>
+    <tr>
+      <td>University of Dallas</td>
+      <td>Irving, Texas</td>
+      <td>Mid South</td>
+      <td>Southern Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Dubuque</td>
+      <td>Dubuque, Iowa</td>
+      <td>Mid West</td>
+      <td>Iowa Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Hartford</td>
+      <td>West Hartford, Connecticut</td>
+      <td>New England</td>
+      <td>America East Conference</td>
+    </tr>
+    <tr>
+      <td>University of La Verne</td>
+      <td>La Verne, California</td>
+      <td>West Coast</td>
+      <td>Southern California Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Lynchburg</td>
+      <td>Lynchburg, Virginia</td>
+      <td>Mid East</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Maine at Farmington</td>
+      <td>Farmington, Maine</td>
+      <td>New England</td>
+      <td>North Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Maine at Presque Isle</td>
+      <td>Presque Isle, Maine</td>
+      <td>New England</td>
+      <td>North Atlantic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Mary Hardin-Baylor</td>
+      <td>Belton, Texas</td>
+      <td>Mid South</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>University of Mary Washington</td>
+      <td>Fredericksburg, Virginia</td>
+      <td>Mid East</td>
+      <td>Capital Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Massachusetts – Boston</td>
+      <td>Boston, Massachusetts</td>
+      <td>New England</td>
+      <td>Little East Conference</td>
+    </tr>
+    <tr>
+      <td>University of Massachusetts – Dartmouth</td>
+      <td>North Dartmouth, Massachusetts</td>
+      <td>New England</td>
+      <td>Massachusetts State Collegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Minnesota – Morris</td>
+      <td>Morris, Minnesota</td>
+      <td>Mid West</td>
+      <td>Upper Midwest Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Mount Union</td>
+      <td>Alliance, Ohio</td>
+      <td>Great Lakes</td>
+      <td>Ohio Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of New England</td>
+      <td>Biddeford, Maine</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Conference</td>
+    </tr>
+    <tr>
+      <td>University of Northwestern – St. Paul</td>
+      <td>Saint Paul, Minnesota</td>
+      <td>Mid West</td>
+      <td>Upper Midwest Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Pittsburgh – Bradford</td>
+      <td>Bradford, Pennsylvania</td>
+      <td>North East</td>
+      <td>Allegheny Mountain Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>University of Pittsburgh – Greensburg</td>
+      <td>Greensburg, Pennsylvania</td>
+      <td>North East</td>
+      <td>Allegheny Mountain Collegiate Conference</td>
+    </tr>
+    <tr>
+      <td>University of Puget Sound</td>
+      <td>Tacoma, Washington</td>
+      <td>West Coast</td>
+      <td>Northwest Conference</td>
+    </tr>
+    <tr>
+      <td>University of Redlands</td>
+      <td>Redlands, California</td>
+      <td>West Coast</td>
+      <td>Southern California Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Rochester</td>
+      <td>Rochester, New York</td>
+      <td>North East</td>
+      <td>University Athletic Association</td>
+    </tr>
+    <tr>
+      <td>University of Saint Joseph</td>
+      <td>West Hartford, Connecticut</td>
+      <td>New England</td>
+      <td>Great Northeast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Scranton</td>
+      <td>Scranton, Pennsylvania</td>
+      <td>North East</td>
+      <td>Landmark Conference</td>
+    </tr>
+    <tr>
+      <td>University of Southern Maine</td>
+      <td>Portland, Maine</td>
+      <td>New England</td>
+      <td>Little East Conference</td>
+    </tr>
+    <tr>
+      <td>University of St. Thomas – Texas</td>
+      <td>Houston, Texas</td>
+      <td>Mid South</td>
+      <td>Red River Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Texas at Dallas</td>
+      <td>Richardson, Texas</td>
+      <td>Mid South</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>University of the Ozarks</td>
+      <td>Clarksville, Arkansas</td>
+      <td>Mid South</td>
+      <td>American Southwest Conference</td>
+    </tr>
+    <tr>
+      <td>University of Wisconsin – Eau Claire</td>
+      <td>Eau Claire, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Wisconsin Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Wisconsin – La Crosse</td>
+      <td>La Crosse, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Wisconsin Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Wisconsin – Oshkosh</td>
+      <td>Oshkosh, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Wisconsin Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Wisconsin – Platteville</td>
+      <td>Platteville, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Wisconsin Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Wisconsin – River Falls</td>
+      <td>River Falls, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Wisconsin Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Wisconsin – Stevens Point</td>
+      <td>Stevens Point, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Wisconsin Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Wisconsin – Stout</td>
+      <td>Menomonie, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Wisconsin Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>University of Wisconsin – Superior</td>
+      <td>Superior, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>UMAC</td>
+    </tr>
+    <tr>
+      <td>University of Wisconsin – Whitewater</td>
+      <td>Whitewater, Wisconsin</td>
+      <td>Great Lakes</td>
+      <td>Wisconsin Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Ursinus College</td>
+      <td>Collegeville, Pennsylvania</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Utica College</td>
+      <td>Utica, New York</td>
+      <td>North East</td>
+      <td>Empire 8 Athletic Conference</td>
+    </tr>
+    <tr>
+      <td> <a href="http://localhost:5000/team"> Vassar College</a></td>
+      <td>Poughkeepsie, New York</td>
+      <td>North East</td>
+      <td>Liberty League</td>
+    </tr>
+    <tr>
+      <td>Virginia Wesleyan University</td>
+      <td>Norfolk, Virginia</td>
+      <td>Mid East</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Wabash College</td>
+      <td>Crawfordsville, Indiana</td>
+      <td>Great Lakes</td>
+      <td>North Coast Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Warren Wilson College</td>
+      <td>Swannanoa, North Carolina</td>
+      <td>Mid East</td>
+      <td>Eastern Metro Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Wartburg College</td>
+      <td>Waverly, Iowa</td>
+      <td>Mid West</td>
+      <td>Iowa Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Washington &amp; Jefferson College</td>
+      <td>Washington, Pennsylvania</td>
+      <td>North East</td>
+      <td>Presidents' Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Washington &amp; Lee University</td>
+      <td>Lexington, Virginia</td>
+      <td>Mid East</td>
+      <td>Old Dominion Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Washington College</td>
+      <td>Chestertown, Maryland</td>
+      <td>North East</td>
+      <td>Centennial Conference</td>
+    </tr>
+    <tr>
+      <td>Washington University in St. Louis</td>
+      <td>Saint Louis, Missouri</td>
+      <td>Mid West</td>
+      <td>University Athletic Association</td>
+    </tr>
+    <tr>
+      <td>Waynesburg University</td>
+      <td>Waynesburg, Pennsylvania</td>
+      <td>North East</td>
+      <td>Presidents' Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Webster University</td>
+      <td>Saint Louis, Missouri</td>
+      <td>Mid West</td>
+      <td>St. Louis Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Wells College</td>
+      <td>Aurora, New York</td>
+      <td>North East</td>
+      <td>United East</td>
+    </tr>
+    <tr>
+      <td>Wentworth Institute of Technology</td>
+      <td>Boston, Massachusetts</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Wesleyan University</td>
+      <td>Middletown, Connecticut</td>
+      <td>New England</td>
+      <td>New England Small College Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Western Connecticut State University</td>
+      <td>Danbury, Connecticut</td>
+      <td>New England</td>
+      <td>MASAC</td>
+    </tr>
+    <tr>
+      <td>Western New England University</td>
+      <td>Springfield, Massachusetts</td>
+      <td>New England</td>
+      <td>Commonwealth Coast Conference</td>
+    </tr>
+    <tr>
+      <td>Westfield State University</td>
+      <td>Westfield, Massachusetts</td>
+      <td>New England</td>
+      <td>MSCAC</td>
+    </tr>
+    <tr>
+      <td>Westminster College – Missouri</td>
+      <td>Fulton, Missouri</td>
+      <td>Mid West</td>
+      <td>Upper Midwest Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Westminster College – Pennsylvania</td>
+      <td>New Wilmington, Pennsylvania</td>
+      <td>North East</td>
+      <td>Presidents' Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Wheaton College – Illinois</td>
+      <td>Wheaton, Illinois</td>
+      <td>Great Lakes</td>
+      <td>College Conference of Illinois and Wisconsin</td>
+    </tr>
+    <tr>
+      <td>Wheaton College – Massachusetts</td>
+      <td>Norton, Massachusetts</td>
+      <td>New England</td>
+      <td>New England Women's &amp; Men's Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Whitman College</td>
+      <td>Walla Walla, Washington</td>
+      <td>West Coast</td>
+      <td>Northwest Conference</td>
+    </tr>
+    <tr>
+      <td>Whittier College</td>
+      <td>Whittier, California</td>
+      <td>West Coast</td>
+      <td>Southern California Intercollegiate Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Whitworth University</td>
+      <td>Spokane, Washington</td>
+      <td>West Coast</td>
+      <td>Northwest Conference</td>
+    </tr>
+    <tr>
+      <td>Widener University</td>
+      <td>Chester, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conferences</td>
+    </tr>
+    <tr>
+      <td>Wilkes University</td>
+      <td>Wilkes-Barre, Pennsylvania</td>
+      <td>North East</td>
+      <td>Middle Atlantic Conferences</td>
+    </tr>
+    <tr>
+      <td>Willamette University</td>
+      <td>Salem, Oregon</td>
+      <td>West Coast</td>
+      <td>Northwest Conference</td>
+    </tr>
+    <tr>
+      <td>William Paterson University of New Jersey</td>
+      <td>Wayne, New Jersey</td>
+      <td>North East</td>
+      <td>New Jersey Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>William Peace University</td>
+      <td>Raleigh, North Carolina</td>
+      <td>Mid East</td>
+      <td>USA South Athletic Conference</td>
+    </tr>
+    <tr>
+      <td>Williams College</td>
+      <td>Williamstown, Massachusetts</td>
+      <td>New England</td>
+      <td>New England Small College Athletic Conference</td>
+    </tr>
+  </tbody>
+</table>
