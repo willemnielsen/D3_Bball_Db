@@ -13,8 +13,3 @@ def makeDF(filepath):
     df.to_csv('~/d3out/players.csv')
     return df
 
-
-df = makeDF("players.txt")
-
-df
-
