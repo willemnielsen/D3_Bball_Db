@@ -6,10 +6,6 @@ from pretty_html_table import build_table
 from d3.models import Team
 import os
 
-schools = d3schools.makeDF('d3schools.txt')
-tables = [schools.to_html(classes='data', columns=['School', 'City and State', 'Region', 'Conference'],
-                          header="true", index=False, justify='left', border=3)]
-
 with open('d3/tables/pandas_tables.pkl', 'rb') as file:
     team_tables = pickle.load(file)
 
