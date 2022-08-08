@@ -1,1 +1,1 @@
-web: gunicorn — bind 0.0.0.0: app:run
+web: gunicorn run:app
