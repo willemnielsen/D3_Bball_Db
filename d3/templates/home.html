@@ -1,8 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
     <h1>D3 Schools</h1>
-    {% for key, val in links.items() %}
-        <a href={{url_for('index', team_name=key)}}> {{key}}</a>
+    {% for team in teams %}
+        <a href={{url_for('index', team_name=team.name)}}> {{team.name}}</a>
         <br>
     {% endfor %}
 {% endblock content %}
