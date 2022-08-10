@@ -1,72 +1,14 @@
-from flask import render_template, url_for, flash, redirect
+from flask import render_template, url_for, flash, redirect, request, abort
 import pickle
-import sys
-from d3 import app, d3schools, players, db
-from d3.forms import AddTeam
-from pretty_html_table import build_table
-from d3.models import Team, Player
+from d3 import app, db, bcrypt
+from d3.forms import AddTeam, RegistrationForm, LoginForm, UpdateAccountForm, PostForm
+from d3.models import Team, Player, User, Post
 from flask_table import Table, Col, create_table
+from flask_login import login_user, current_user, logout_user, login_required
+from PIL import Image
 import os
+import secrets
 from d3scrape import scrape
-
-
-# class RenameUnpickler(pickle.Unpickler):
-#     def find_class(self, module, name):
-#         renamed_module = module
-#         if module == "teamandpage":
-#             renamed_module = "d3scrape.teamandpage"
-#         return super(RenameUnpickler, self).find_class(renamed_module, name)
-#
-#
-# def renamed_load(file_obj):
-#     return RenameUnpickler(file_obj).load()
-#
-#
-# with open('d3/teams/teams_with_players.pkl', 'rb') as file:
-#     teams = renamed_load(file)
-# with open('d3/teams/teams_with_players.pkl', 'wb') as file:
-#     pickle.dump(teams, file)
-
-with open('d3/teams/teams_with_players.pkl', 'rb') as file:
-    teams = pickle.load(file)
-
-db.drop_all()
-db.create_all()
-dbteams = []
-for team in teams:
-    dbteam = Team(name=team.name)
-    dbplayers = []
-    try:
-        players = team.players
-    except AttributeError:
-        continue
-    for player in players:
-        dbplayers.append(Player(name=player.name, stats=player.stats, team_id=dbteam.id))
-    dbteam.players = dbplayers
-    db.session.add(dbteam)
-    db.session.commit()
-
-
-
-
-
-
-
-
-
-# class Team:
-#     def __init__(self, name, players=None):
-#         self.name = name
-#         self.players = players
-#
-#
-# players = players.makeDF('players.txt')
-# team = Team('Vassar College', players)
-#
-# playertables = [players.to_html(classes='players', columns=['NO.', 'NAME', 'CL.', 'POS.', 'HT.', 'WT.'],
-#                           header="true", index=False, justify='left', border=3)]
-
-
 
 
 @app.route('/')
@@ -74,6 +16,13 @@ for team in teams:
 def home():
     teams = Team.query.all()
     return render_template('home.html', teams=teams)
+
+@app.route('/blog')
+def blog():
+    posts = Post.query.all()
+    return render_template('blog.html', posts=posts, blog=True)
+
+
 
 
 @app.route('/addteam', methods=['GET', 'POST'])
@@ -85,7 +34,35 @@ def addteam():
     return render_template('addteam.html', title='Add Team', form=form)
 
 
+@app.route("/register", methods=['GET', 'POST'])
+def register():
+    if current_user.is_authenticated:
+        return redirect(url_for('blog'))
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        user = User(username=form.username.data, password=hashed_password)
+        db.session.add(user)
+        db.session.commit()
+        flash('Your account has been created! You are now able to log in', 'success')
+        return redirect(url_for('login'))
+    return render_template('register.html', title='Register', form=form)
 
+
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+    if current_user.is_authenticated:
+        return redirect(url_for('blog'))
+    form = LoginForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(username=form.username.data).first()
+        if user and bcrypt.check_password_hash(user.password, form.password.data):
+            login_user(user, remember=form.remember.data)
+            next_page = request.args.get('next')
+            return redirect(next_page) if next_page else redirect(url_for('blog'))
+        else:
+            flash('Login Unsuccessful. Please check email and password', 'danger')
+    return render_template('login.html', title='Login', form=form)
 
 
 @app.route('/<team_name>')
@@ -102,6 +79,95 @@ def index(team_name):
     return render_template('team.html', table=table)
 
 
+@app.route("/account", methods=['GET', 'POST'])
+@login_required
+def account():
+    form = UpdateAccountForm()
+    if form.validate_on_submit():
+        if form.picture.data:
+            picture_file = save_picture(form.picture.data)
+            current_user.image_file = picture_file
+        current_user.username = form.username.data
+        db.session.commit()
+        flash('Your account has been updated!', 'success')
+        return redirect(url_for('account'))
+    elif request.method == 'GET':
+        form.username.data = current_user.username
+    image_file = url_for('static', filename='pfps/' + current_user.image_file)
+    return render_template('account.html', title='Account',
+                           image_file=image_file, form=form)
+
+
+@app.route("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for('home'))
+
+
+def save_picture(form_picture):
+    random_hex = secrets.token_hex(8)
+    _, f_ext = os.path.splitext(form_picture.filename)
+    picture_fn = random_hex + f_ext
+    picture_path = os.path.join(app.root_path, 'static/profile_pics', picture_fn)
+
+    output_size = (125, 125)
+    i = Image.open(form_picture)
+    i.thumbnail(output_size)
+    i.save(picture_path)
+
+    return picture_fn
+
+
+@app.route("/post/new", methods=['GET', 'POST'])
+@login_required
+def new_post():
+    form = PostForm()
+    if form.validate_on_submit():
+        post = Post(title=form.title.data, content=form.content.data, author=current_user)
+        db.session.add(post)
+        db.session.commit()
+        flash('Your post has been created!', 'success')
+        return redirect(url_for('blog'))
+    return render_template('create_post.html', title='New Post',
+                           form=form, legend='New Post')
+
+
+@app.route("/post/<int:post_id>")
+def post(post_id):
+    post = Post.query.get_or_404(post_id)
+    return render_template('post.html', title=post.title, post=post)
+
+
+@app.route("/post/<int:post_id>/update", methods=['GET', 'POST'])
+@login_required
+def update_post(post_id):
+    post = Post.query.get_or_404(post_id)
+    if post.author != current_user:
+        abort(403)
+    form = PostForm()
+    if form.validate_on_submit():
+        post.title = form.title.data
+        post.content = form.content.data
+        db.session.commit()
+        flash('Your post has been updated!', 'success')
+        return redirect(url_for('post', post_id=post.id))
+    elif request.method == 'GET':
+        form.title.data = post.title
+        form.content.data = post.content
+    return render_template('create_post.html', title='Update Post',
+                           form=form, legend='Update Post')
+
+
+@app.route("/post/<int:post_id>/delete", methods=['POST'])
+@login_required
+def delete_post(post_id):
+    post = Post.query.get_or_404(post_id)
+    if post.author != current_user:
+        abort(403)
+    db.session.delete(post)
+    db.session.commit()
+    flash('Your post has been deleted!', 'success')
+    return redirect(url_for('blog'))
 
 @app.route('/about')
 def about():
