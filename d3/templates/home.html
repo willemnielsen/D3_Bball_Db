@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>D3 Schools</h1>
+    <h1>Teams</h1>
     {% for team in teams %}
         <a href={{url_for('index', team_name=team.name)}}> {{team.name}}</a>
         <br>
