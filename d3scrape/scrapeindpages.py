@@ -2,7 +2,7 @@ from d3scrape.scrapetools import ScrapeTools as st
 from bs4 import BeautifulSoup as bs
 from d3scrape.teamandpage import Team, Page
 
-
+base = '/Users/erichegonzales/PycharmProjects/playerscrape/mp/'
 class ScrapeIndPages:
     def __init__(self, teams):
         self.teams = teams
@@ -41,31 +41,35 @@ class ScrapeIndPages:
         st.dump(no_ind_teams, 'mp/no_ind_teams.pkl')
         st.dump(no_doc_teams, 'mp/no_doc_teams.pkl')
 
-
     def update_ind_urls(self, path='mp/ind_urls', download=False):
         ind_urls = {}
         no_ind_teams = {}
         no_doc_teams = {}
         for team in self.teams:
             print('on to ' + team.name)
-            if team.stats_page:
-                if team.stats_page.has_doc:
-                    soup = team.stats_page.get_soup()
-                    ind_button = soup.find('a', string='Individual')
-                    if ind_button:
-                        rel_url = ind_button.get('href')
-                        ind_url = team.stats_page.url + rel_url
-                        ind_urls[team.name] = ind_url
-                        team.update_stats_page(ind_url)
-                        if download:
-                            team.ind_page.download()
-                    else:
-                        no_ind_teams[team.name] = team.stats_page.url
+            rel_url = ScrapeIndPages.get_url(team)
+            if rel_url:
+                ind_url = team.stats_page.url + rel_url
+                ind_urls[team.name] = ind_url
+                team.update_stats_page(ind_url)
+                if download:
+                    team.ind_page.download()
                 else:
-                    no_doc_teams[team.name] = team.stats_page.url
+                    no_ind_teams[team.name] = team.stats_page.url
+            else:
+                no_doc_teams[team.name] = team.stats_page.url
         st.dump(ind_urls, path)
         st.dump(no_ind_teams, 'mp/no_ind_teams.pkl')
         st.dump(no_doc_teams, 'mp/no_doc_teams.pkl')
+
+    @staticmethod
+    def get_url(team):
+        if team.stats_page:
+            if team.stats_page.has_doc:
+                soup = team.stats_page.get_soup()
+                button = soup.find('a', string='Individual')
+                if button:
+                    return button.get('href')
 
     def update_ind_pages(self, dict_path, download=False, new_urls=False):
         if new_urls:
@@ -78,6 +82,18 @@ class ScrapeIndPages:
                         team.update_stats_page(val)
                         if download:
                             team.stats_page.download()
+
+    @staticmethod
+    def download_lineup_teams():
+        lineup_urls = st.load(base + 'lineup_urls.pkl')
+        teams = st.load(base + 'updated_teams.pkl')
+        for team in teams:
+            for key, val in lineup_urls.items():
+                if team.name == key:
+                    team.ind_page.download()
+
+
+
 
 
     @staticmethod
@@ -189,5 +205,7 @@ class ScrapeIndPages:
         st.dump(sin, '../mp/sin.pkl')
 
 
+if __name__ == '__main__':
+    ScrapeIndPages.download_lineup_teams()
 
 

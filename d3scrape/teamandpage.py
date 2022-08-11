@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup as bs
 import os
 from d3scrape.scrapetools import ScrapeTools
-
+from requests.exceptions import RequestException
 
 class Team:
     def __init__(self, name, players=None, url=None, stats_page=None, ind_page=None):
@@ -30,9 +30,12 @@ class Team:
 
 
 class Page:
-    def __init__(self, url, path=None, site_type=None, has_doc=False):
+    def __init__(self, url, team_name, path=None, site_type=None, has_doc=False, doc=None):
         self.url = url
+        self.team_name = team_name
         self.has_doc = has_doc
+        self.doc = doc
+
         if path:
             self.path = path
         else:
@@ -46,6 +49,18 @@ class Page:
         with open(self.path, 'w+') as file:
             file.write(response.text)
         self.has_doc = True
+
+    def set_doc(self):
+        if self.has_doc:
+            with open(self.path, 'r') as file:
+                doc = file.read()
+            return doc
+        try:
+            response = ScrapeTools.get_response(self.url)
+        except (RequestException, ScrapeTools.Non200Status):
+            return
+        else:
+            self.doc = response.text
 
     def get_soup(self):
         try:

@@ -37,8 +37,13 @@ class ScrapeTools:
         print(f'requesting page: {url}')
         response = requests.get(url, headers=headers)
         if response.status_code != 200:
-            raise Non200Status(url, response.status_code)
+            raise ScrapeTools.Non200Status(url, response.status_code)
         return response
+
+    class Non200Status(Exception):
+        def __init__(self, url, status):
+            self.url = url
+            self.status = status
 
 
 class RenameUnpickler(pickle.Unpickler):
@@ -50,10 +55,7 @@ class RenameUnpickler(pickle.Unpickler):
 
 
 
-class Non200Status(Exception):
-    def __init__(self, url, status):
-        self.url = url
-        self.status = status
+
 
     def __str__(self):
         return f"""url: {self.url} responded with {self.status}"""

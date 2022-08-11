@@ -1,5 +1,5 @@
 import csv
-from d3scrape.scrapetools import ScrapeTools as st, Non200Status
+from d3scrape.scrapetools import ScrapeTools as st
 from requests import RequestException
 
 
@@ -14,7 +14,7 @@ class ScrapeStatsPages:
         for team in self.teams:
             try:
                 soup = st.get_new_soup(team.url)
-            except (Non200Status, RequestException) as error:
+            except (st.Non200Status, RequestException) as error:
                 invalid_dict[team.name] = error
             else:
                 stats_link = soup.find('a', string='Statistics')
