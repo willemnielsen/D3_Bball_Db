@@ -20,7 +20,7 @@ class Team:
 
     def init_stats_page(self, stats_url):
         path = os.path.expanduser(f"~/stats_html/{self.name}")
-        self.stats_page = Page(stats_url, path=path)
+        self.stats_page = Page(stats_url, self.name, path=path)
         self.stats_page.path = path
 
     def init_ind_page(self, ind_url):
