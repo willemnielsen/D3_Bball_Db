@@ -73,8 +73,10 @@ class Page:
 
 
 class Player:
-    def __init__(self, team, name, stats=None):
-        self.team = team
+    def __init__(self, id, team, bio=None, stats=None, name=None):
+        self.id, self.team = id, team
+        self.stats = stats
+        self.bio = bio
         self.name = name
         self.stats = stats
 
