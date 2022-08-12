@@ -149,18 +149,28 @@ class Scrape(st):
         with open('../mp/pandas_tables.pkl', 'wb') as file:
             pickle.dump(pandas_tables, file)
 
+    @staticmethod
+    def download_all(team_path):
+        teams = st.load(team_path)
+        ssp = ScrapeStatsPages(teams)
+        ssp.download_all()
+
+
+
+
+
 if __name__ == '__main__':
-    Scrape.set_has_doc_ind()
-
-
-
-
-
-
-
-
-
-
+    ScrapeStatsPages.get_stat_url_from_extra_link()
+    # no_ind = st.load('mp/no_ind_dict.pkl')
+    # teams = st.load('mp/nts_up.pkl')
+    # no_ind_teams = []
+    # for team in teams:
+    #     if team.stats_page:
+    #         if team.stats_page.has_doc:
+    #             if team.name in no_ind:
+    #                 print(team.stats_page.url)
+    #                 no_ind_teams.append(team)
+    # st.dump(no_ind_teams, 'mp/no_ind_teams.pkl')
 
 
 
