@@ -68,3 +68,15 @@ class ScrapeStatsPages:
                     if download:
                         team.stats_page.download()
 
+
+    def download_all(self):
+        for team in self.teams:
+            if team.stats_page:
+                if not team.stats_page.has_doc:
+                    try:
+                        team.stats_page.download()
+                    except (RequestException, st.Non200Status):
+                        continue
+        return self.teams
+
+
