@@ -64,12 +64,24 @@ class ScrapeIndPages:
 
     @staticmethod
     def get_url(team):
-        if team.stats_page:
-            if team.stats_page.has_doc:
-                soup = team.stats_page.get_soup()
-                button = soup.find('a', string='Individual')
-                if button:
-                    return button.get('href')
+        if team.stats_page.has_doc:
+            soup = team.stats_page.get_soup()
+            button = soup.find('a', string='Individual')
+            if button:
+                return button.get('href')
+            button = soup.find('a', string='Lineup')
+            if button:
+                return button.get('href')
+            buttons = soup.find_all('a')
+
+
+
+            # for button in buttons:
+            #     if button.get('href'):
+            #         if '22' in button.get('href'):
+            #             print(team.stats_page.url + button.get('href'))
+            #             return button.get('href')
+
 
     def update_ind_pages(self, dict_path, download=False, new_urls=False):
         if new_urls:
