@@ -25,7 +25,7 @@ class Team:
 
     def init_ind_page(self, ind_url):
         path = os.path.expanduser(f"~/ind_html/{self.name}")
-        self.ind_page = Page(ind_url, path=path)
+        self.ind_page = Page(ind_url, self.name, path=path)
         self.stats_page.path = path
 
 
