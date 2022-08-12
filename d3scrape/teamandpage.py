@@ -78,7 +78,6 @@ class Player:
         self.stats = stats
         self.bio = bio
         self.name = name
-        self.stats = stats
 
 
 
