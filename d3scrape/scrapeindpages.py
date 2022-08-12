@@ -20,7 +20,7 @@ class ScrapeIndPages:
     @staticmethod
     def update_ind_url(team, ind_path, download=False):
         ind_urls = st.load(ind_path)
-        no_ind_teams = st.load('mp/no_ind_teams.pkl')
+        no_ind_teams = st.load('mp/no_ind_dict.pkl')
         no_doc_teams = st.load('mp/no_doc_teams.pkl')
         if team.stats_page:
             if team.stats_page.has_doc:
@@ -38,29 +38,29 @@ class ScrapeIndPages:
             else:
                 no_doc_teams[team.name] = team.stats_page.url
         st.dump(ind_urls, ind_path)
-        st.dump(no_ind_teams, 'mp/no_ind_teams.pkl')
+        st.dump(no_ind_teams, 'mp/no_ind_dict.pkl')
         st.dump(no_doc_teams, 'mp/no_doc_teams.pkl')
 
-    def update_ind_urls(self, path='mp/ind_urls', download=False):
+    def update_ind_urls(self, download=False):
         ind_urls = {}
         no_ind_teams = {}
         no_doc_teams = {}
         for team in self.teams:
-            print('on to ' + team.name)
-            rel_url = ScrapeIndPages.get_url(team)
-            if rel_url:
-                ind_url = team.stats_page.url + rel_url
-                ind_urls[team.name] = ind_url
-                team.update_stats_page(ind_url)
-                if download:
-                    team.ind_page.download()
-                else:
-                    no_ind_teams[team.name] = team.stats_page.url
-            else:
-                no_doc_teams[team.name] = team.stats_page.url
-        st.dump(ind_urls, path)
-        st.dump(no_ind_teams, 'mp/no_ind_teams.pkl')
-        st.dump(no_doc_teams, 'mp/no_doc_teams.pkl')
+            if team.stats_page:
+                if not team.ind_page:
+                    print('on to ' + team.name)
+                    rel_url = ScrapeIndPages.get_url(team)
+                    if rel_url:
+                        ind_url = team.stats_page.url + rel_url
+                        ind_urls[team.name] = ind_url
+                        team.init_ind_page(ind_url)
+                        if download:
+                            team.ind_page.download()
+                    else:
+                        no_ind_teams[team.name] = team.stats_page.url
+        st.dump(ind_urls, base + 'ind_urls.pkl')
+        st.dump(no_ind_teams, base + 'no_ind_dict.pkl')
+        st.dump(no_doc_teams, base + 'no_doc_teams.pkl')
 
     @staticmethod
     def get_url(team):
@@ -83,17 +83,22 @@ class ScrapeIndPages:
             #             return button.get('href')
 
 
-    def update_ind_pages(self, dict_path, download=False, new_urls=False):
+
+
+    def update_ind_pages(self, download=False, new_urls=False):
+        url_path = base + 'ind_urls.pkl'
+        team_path = base + 'nts_up.pkl'
         if new_urls:
-            self.update_ind_urls(path=dict_path, download=download)
+            self.update_ind_urls(download=download)
         else:
-            ind_urls = st.load(dict_path)
+            ind_urls = st.load(url_path)
             for team in self.teams:
                 for key, val in ind_urls.items():
                     if team.name == key:
                         team.update_stats_page(val)
                         if download:
                             team.stats_page.download()
+        st.dump(self.teams, team_path)
 
     @staticmethod
     def download_lineup_teams():
@@ -119,24 +124,21 @@ class ScrapeIndPages:
         st.dump(teams, '../mp/teams.pkl')
 
     @staticmethod
-    def update_teams(teams):
-        how_many = []
+    def teams_with_indpages():
+        teams = st.load(base + 'updated_teams_with_players.pkl')
         for team in teams:
-            if team.has_individual:
-                how_many.append(team.name)
-                if team.name == 'Vassar':
-                    print('Vassar')
-        print(f"{len(how_many)} teams have individual pages")
+            if not team.stats_page:
+                print(team.url)
 
     @staticmethod
-    def no_ind_pages(teams):
+    def no_ind_pages():
+        teams = st.load(base + 'updated_teams_with_players.pkl')
+        how_many = []
         for team in teams:
             if team.stats_page:
-                if team.stats_page.has_doc:
-                    if not team.has_individual:
-                        print(team.name)
-                        print(team.stats_page.url)
-
+                if not team.ind_page:
+                    how_many.append(team.name)
+        print(f"{len(how_many)} don't have individual pages")
     @staticmethod
     def xml(teams):
         xml_dict = {}
@@ -218,6 +220,6 @@ class ScrapeIndPages:
 
 
 if __name__ == '__main__':
-    ScrapeIndPages.download_lineup_teams()
+    ScrapeIndPages.teams_with_indpages()
 
 
