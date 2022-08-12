@@ -2,9 +2,10 @@ from d3scrape.scrapetools import ScrapeTools as st
 from d3scrape.scrapestatspages import ScrapeStatsPages
 from d3scrape.scrapeindpages import ScrapeIndPages
 from d3scrape.d3hoops import D3Hoops
-from d3scrape.teamandpage import Team, Page
+from d3scrape.teamandpage import Team, Page, Player
 from bs4 import BeautifulSoup as bs
 import pickle
+from uuid import uuid4
 
 
 
@@ -52,6 +53,33 @@ class Scrape(st):
             except AttributeError:
                 continue
         st.dump(teams, Scrape.base + 'updated_teams.pkl')
+
+    @staticmethod
+    def get_new_players():
+        teams = st.load(Scrape.base + 'updated_teams.pkl')
+        for team in teams:
+            pls = team.players
+            if pls:
+                npls = []
+                for p in pls:
+                    npls.append(Player(uuid4().time_low, p.team, stats=p.stats, name=p.name))
+                team.players = npls
+        st.dump(teams, Scrape.base + 'updt_plys.pkl')
+
+    @staticmethod
+    def new_teams():
+        teams = st.load(Scrape.base + 'updated_teams_with_players.pkl')
+        nts = []
+        for team in teams:
+            nt = Team(team.name, players=team.players, url=team.url, stats_page=team.stats_page, ind_page=team.ind_page)
+            nts.append(nt)
+        st.dump(nts, Scrape.base + 'nts.pkl')
+
+
+
+
+
+
 
     @staticmethod
     def set_has_doc_ind():
