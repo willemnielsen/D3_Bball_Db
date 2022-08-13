@@ -48,14 +48,11 @@ class ScrapeStatsPages:
                             if 'Statistics' in name and '2021-22' in url or '2021-22' in url and 'stats' in url:
                                 print('found link for ' + team.name + ':' + team.baseurl + url)
                                 stats_link_dict[team.name] = team.baseurl + url
-                                team.init_stats_page(team.baseurl + url)
+                                team.set_stats_page(team.baseurl + url)
                         except AttributeError:
                             continue
         st.dump(teams, 'mp/teams_with_extra_stats_link')
         st.dump(stats_link_dict, 'mp/stats_link_dict.pkl')
-
-
-
 
     def update_stats_pages(self, dict_path='mp/stats_link_dict_new.pkl', new_urls=False, download=False):
         if new_urls:
@@ -78,5 +75,16 @@ class ScrapeStatsPages:
                     except (RequestException, st.Non200Status):
                         continue
         return self.teams
+
+    def download_new(self, teams):
+        for old, new in zip(self.teams, teams):
+            if old.stats_page and new.stats_page:
+                if old.stats_page.url != new.stats_page.url:
+                    try:
+                        new.stats_page.download()
+                    except (RequestException, st.Non200Status):
+                        continue
+        return teams
+
 
 

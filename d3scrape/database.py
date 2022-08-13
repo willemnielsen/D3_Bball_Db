@@ -63,7 +63,7 @@ class DataBase:
                     stat_urls.append(url)
         for team in self.teams:
             if team.has_statistics:
-                team.init_stats_page(stat_urls.popleft())
+                team.set_stats_page(stat_urls.popleft())
 
     def find_index_stats_url(self, stats_url):
         for idx, team in enumerate(self.teams):
@@ -105,7 +105,7 @@ class DataBase:
             if team.stats_page:
                 if team.stats_page.has_doc:
                     if team.has_individual:
-                        team.init_ind_page(ind_urls.popleft())
+                        team.set_ind_page(ind_urls.popleft())
 
     def update_ind_pages(self, d3):
         for team in self.teams:

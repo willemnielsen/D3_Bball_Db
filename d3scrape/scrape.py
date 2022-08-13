@@ -3,13 +3,15 @@ from d3scrape.scrapestatspages import ScrapeStatsPages
 from d3scrape.scrapeindpages import ScrapeIndPages
 from d3scrape.d3hoops import D3Hoops
 from d3scrape.teamandpage import Team, Page, Player
+from d3scrape.scrapeplayers import ScrapePlayers
 from bs4 import BeautifulSoup as bs
 import pickle
 from uuid import uuid4
 
-
-
 class Scrape(st):
+    def __init__(self, teams):
+        self.teams = teams
+
     base = '/Users/erichegonzales/PycharmProjects/playerscrape/mp/'
     @staticmethod
     def update_names_and_sites(path=None):
@@ -137,6 +139,14 @@ class Scrape(st):
         sip = ScrapeIndPages(teams)
         sip.update_ind_pages(download=download, new_urls=new_urls)
 
+    def scrape_ind_pages(self, download=False, from_where='both'):
+        return ScrapeIndPages.scrape(self.teams, download=download, from_where=from_where)
+
+    def scrape_players(self):
+        ScrapePlayers.scrape(self.teams)
+
+
+
 
 
     def tables_to_pandas(self):
@@ -160,17 +170,30 @@ class Scrape(st):
 
 
 if __name__ == '__main__':
-    ScrapeStatsPages.get_stat_url_from_extra_link()
-    # no_ind = st.load('mp/no_ind_dict.pkl')
-    # teams = st.load('mp/nts_up.pkl')
+    new_teams = st.load('mp/teams_812.pkl')
+    # old_teams = st.load('mp/nts_down.pkl')
+    # ssp = ScrapeStatsPages(old_teams)
+    # teams_with_has_doc = ssp.download_new(new_teams)
+    # teams_with_has_doc = st.load('mp/extra_with_has_doc')
+    # ScrapeIndPages.update_new_stats(old_teams, new_teams)
+    # for team in new_teams:
+    #     if team.ind_page:
+    #         print(team.ind_page.path)
+    sip = ScrapeIndPages(st.load('mp/teams_812.pkl'))
+    sip.update_ind_urls(download=True)
+    # sip.update_new(teams_with_has_doc, download=True)
+    # ScrapeStatsPages.get_stat_url_from_extra_link()
+    # no_ind = st.load('mp/new_no_ind_dict.pkl')
+
     # no_ind_teams = []
+    # count = 0
     # for team in teams:
     #     if team.stats_page:
     #         if team.stats_page.has_doc:
-    #             if team.name in no_ind:
-    #                 print(team.stats_page.url)
-    #                 no_ind_teams.append(team)
-    # st.dump(no_ind_teams, 'mp/no_ind_teams.pkl')
+    #             if team.ind_page:
+    #                 if team.ind_page.has_doc:
+    #                     count += 1
+    # print(count)
 
 
 

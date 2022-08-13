@@ -58,7 +58,7 @@ def more():
             if url:
                 print('found stats page for ' + team.name)
                 count += 1
-                team.init_stats_page(url)
+                team.set_stats_page(url)
             d.close()
     st.dump(no_more, base + 'no_more.pkl')
     st.dump(no_stats, base + 'no_stats.pkl')
@@ -114,7 +114,7 @@ def try_again():
                             if url:
                                 print('found stats page for ' + team.name)
                                 count += 1
-                                team.init_stats_page(url)
+                                team.set_stats_page(url)
                             d.close()
     st.dump(teams, base + 'nts_sel.pkl')
 
@@ -157,7 +157,7 @@ def more_not_inter():
                 if url:
                     print('found stats page for ' + team.name)
                     count += 1
-                    team.init_stats_page(url)
+                    team.set_stats_page(url)
                 d.close()
     st.dump(teams, base + 'nts_sel.pkl')
 
